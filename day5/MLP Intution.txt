@@ -1,0 +1,44 @@
+Understanding the Multi Layer Perceptron Intuitively
+
+**Multi-layer perceptron can create nonlinear decision boundaries**
+    - A single perceptron cannot capture nonlinearity in data, which limits its application.
+    - The multi-layer perceptron (MLP) addresses this limitation by connecting multiple perceptrons, forming a neural network capable of 
+      capturing nonlinearity in data and creating nonlinear decision boundaries.
+
+**Multi Layer Perceptron (MLP) works similar to Logistic Regression**
+    - An MLP operates similarly to logistic regression but with additional complexity.
+    - It uses activation functions such as Sigmoid to calculate the probability of outcomes based on input parameters like CGPA and IQ.
+
+**Introduction to Multi Layer Perceptron (MLP)**
+    - An MLP involves the combination of multiple perceptrons to solve complex problems.
+    - Each perceptron defines different decision boundaries, which, when superimposed, contribute to the final output.
+
+**Explaining the mathematical process behind implementing multi-layer perceptrons**
+    - The process involves using multiple perceptrons to calculate the probability of specific outcomes, such as student placement.
+    - The outputs of these perceptrons are combined and processed using a sigmoid function to determine the final probability.
+
+**Multi Layer Perceptron (MLP) is a combination of multiple perceptrons**
+    - An MLP is essentially a network formed by connecting multiple perceptrons.
+    - It processes a combination of inputs and weights to generate outputs that can be further processed for more refined results.
+
+**Explanation of multi-layer perceptron with an example**
+    - An example illustrates how two perceptrons are connected, with their combined output depending on inputs like CGPA, IQ, and bias.
+    - This example highlights the structure of multiple perceptrons, including their inputs, weights, biases, and outputs in relation to 
+      the activation function used in the neural network.
+
+**MLP architecture allows for changes and customization**
+    - The architecture of an MLP, which involves the connection of perceptrons, can be modified to meet new requirements.
+    - Adding extra layers or increasing the number of nodes enhances the network's ability to capture nonlinear data effectively.
+
+**Adding more nodes in the hidden layer helps create complex non-linear decision boundaries**
+    - Increasing the number of nodes in the input layer changes the network's ability to handle more complex domains, especially with more 
+      input columns.
+    - As the number of columns increases, the dimensions also increase, eventually forming a hyperplane instead of a simple plane.
+
+**Neural networks capture complex data relationships over time**
+    - Training neural networks with complex data over sufficient time allows them to capture intricate relationships within the data.
+    - Even a small MLP can effectively handle and represent complex data relationships.
+
+**Discussion on training complex datasets with non-linear architecture**
+    - Training processes may need adjustments to ensure convergence when dealing with complex datasets.
+    - Exploring different activation functions can lead to improved results in handling nonlinear architectures.
