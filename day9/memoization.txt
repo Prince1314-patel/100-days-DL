@@ -1,0 +1,43 @@
+ MLP Memoization | Complete Deep Learning Playlist
+
+ 1. Introduction
+- Focus on Memoization:
+  - Technique used in computer science and data science to optimize programs.
+  - Particularly useful in the development of machine learning algorithms, especially in gradient descent.
+- Explanation and Application:
+  - The video will explain the concept of memoization and its application in gradient descent.
+  - Addresses the complexity of calculating derivatives for neural networks with multiple hidden layers, focusing on the first layer.
+- Importance:
+  - Understanding memoization is emphasized as important for future videos in the series.
+
+ 2. What is Memoization?
+- Optimization Technique:
+  - Memoization optimizes computer programs by storing the results of expensive function calls.
+  - Allows the program to retrieve stored results instead of recalculating them when the same input is encountered again.
+- Benefits and Trade-offs:
+  - Speeds up program execution by reducing the number of calculations.
+  - Requires additional storage space for storing calculated results.
+- Common Usage:
+  - Commonly used in dynamic programming, which solves problems by breaking them down into smaller subproblems.
+
+ 3. Code Demo - Fibonacci Sequence
+- Initial Inefficiency:
+  - Discussed in the context of the Fibonacci sequence.
+  - Initial code implementation is inefficient due to repeated calculations, leading to a time complexity of O(2^n).
+- Introduction of Memoization:
+  - Memoization solves this inefficiency by storing previously calculated Fibonacci values in a dictionary (or hash table) to avoid redundant computations.
+  - Memoized code checks if a value is already present in the dictionary before calculating it, reducing the time complexity to O(n).
+- Benefits:
+  - Dramatic reduction in execution time for larger input values.
+- Related Technique:
+  - Dynamic programming mentioned as a related technique that utilizes memoization to solve problems with overlapping subproblems.
+
+ 4. MLP Memoization
+- Application in Neural Networks:
+  - Discussed in the context of neural networks, focusing on its application to backpropagation.
+- Backpropagation Complexity:
+  - Involves calculating derivatives of weights in a neural network to update them during training.
+  - Complex, especially with multiple paths for information flow.
+- Efficiency Improvement:
+  - Memoization significantly improves the efficiency of backpropagation by storing previously calculated derivatives and reusing them when needed.
+  - Avoids redundant calculations, saving time and computational resources.
