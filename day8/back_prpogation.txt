@@ -6,15 +6,19 @@
 - Understanding these three videos will provide a strong foundation for backpropagation and prevent future confusion.
 
  The Intuition Behind the Algorithm
-- Backpropagation aims to find the optimal set of weights and biases in a neural network to minimize the loss function, which represents the error between the network's predictions and the actual target values.
-- The loss function is influenced by all trainable parameters (weights and biases) in the neural network. Changing these parameters affects the loss function value.
-- Backpropagation iteratively adjusts weights and biases to minimize the loss function by calculating the gradient of the loss function with respect to each parameter and updating the parameters to reduce the loss.
+- Backpropagation aims to find the optimal set of weights and biases in a neural network to minimize the loss function, which represents the error 
+  between the network's predictions and the actual target values.
+- The loss function is influenced by all trainable parameters (weights and biases) in the neural network. Changing these parameters affects the loss 
+  function value.
+- Backpropagation iteratively adjusts weights and biases to minimize the loss function by calculating the gradient of the loss function with respect 
+  to each parameter and updating the parameters to reduce the loss.
 
  Gradient and Derivative Concepts
 - Gradient:
   - A gradient is a derivative, indicating the rate of change of a function concerning its input.
   - For functions depending on multiple parameters, the gradient is a vector of partial derivatives for each parameter.
-  - In neural networks, the gradient updates the weights. By calculating the gradient of the loss function, we determine how to adjust weights to improve network performance.
+  - In neural networks, the gradient updates the weights. By calculating the gradient of the loss function, we determine how to adjust weights to improve 
+    network performance.
 - Derivative:
   - The derivative of a function indicates how much the function's value changes with respect to a change in its input.
 
@@ -26,15 +30,19 @@
 
  Intuition of Backpropagation
 - Update Rule:
-  - The update rule in backpropagation involves updating weights and biases. By assuming constant output layer weights and biases, the loss function depends only on hidden layer weights and biases.
+  - The update rule in backpropagation involves updating weights and biases. By assuming constant output layer weights and biases, the loss function
+    depends only on hidden layer weights and biases.
 - Loss and Weights Relationship:
   - The goal is to find weight values that minimize the loss by understanding how changing weights affects the loss.
 - Role of the Derivative:
-  - The derivative of the loss function with respect to a weight indicates how much the loss changes when the weight is adjusted. This derivative is known as the gradient.
+  - The derivative of the loss function with respect to a weight indicates how much the loss changes when the weight is adjusted. This derivative is 
+    known as the gradient.
 - Weight Updates Based on the Gradient:
-  - Weights are updated by subtracting a small value proportional to the gradient. If the gradient is positive, decreasing the weight reduces the loss. If the gradient is negative, increasing the weight reduces the loss. The learning rate determines the step size taken in the gradient's direction.
+  - Weights are updated by subtracting a small value proportional to the gradient. If the gradient is positive, decreasing the weight reduces the loss. 
+    If the gradient is negative, increasing the weight reduces the loss. The learning rate determines the step size taken in the gradient's direction.
 - Visualizing Gradient Descent:
-  - Gradient descent is visualized using a graph to show how the algorithm iteratively updates weights by moving in the direction of the negative gradient, eventually reaching a minimum point on the loss function curve.
+  - Gradient descent is visualized using a graph to show how the algorithm iteratively updates weights by moving in the direction of the negative gradient,
+    eventually reaching a minimum point on the loss function curve.
 
  Demo
 - Demonstrates the impact of learning rate on the optimization process.
