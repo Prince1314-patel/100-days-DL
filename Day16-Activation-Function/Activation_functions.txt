@@ -1,0 +1,55 @@
+ Activation Functions in Deep Learning
+
+Introduction:
+- The video is centered around activation functions in artificial neural networks, divided into two parts. The first part discusses three critical activation functions: sigmoid, tanh, and ReLU.
+
+Understanding Activation Functions:
+- Definition: Activation functions are mathematical functions that determine the output of a neuron in a neural network. They serve as a gate between the neuron's input and output.
+- Purpose: These functions introduce non-linearity into the model, allowing it to learn complex data patterns, essential for making neural networks more powerful than simple linear models.
+
+Importance of Activation Functions:
+- They enable neural networks to capture non-linear data relationships, making them indispensable for tasks like classification and regression. Without activation functions, a neural network would 
+  be equivalent to a linear regression model, limiting its capabilities.
+
+Code Demonstration:
+- A model is trained on non-linearly separable data using different activation functions.
+  - With a linear activation function, the model fails to separate the data.
+  - When switched to a ReLU activation function, the model achieves 100% accuracy, demonstrating the critical role of non-linear activation functions.
+
+Necessity of Activation Functions:
+- Activation functions are crucial for introducing non-linearity in neural networks. Without them, networks would only learn linear relationships, severely limiting their ability to model complex 
+  data patterns.
+
+Ideal Activation Function:
+- Characteristics:
+  - Non-linear: To capture complex patterns.
+  - Differentiable: Necessary for optimization algorithms like gradient descent.
+  - Computationally Efficient: For faster training.
+  - Zero-Centered: To speed up convergence.
+  - Non-Saturating: To avoid the vanishing gradient problem.
+
+Sigmoid Activation Function:
+- Description: A popular S-shaped curve function used in deep learning, especially in binary classification problems.
+- Formula: \( \text{Sigmoid}(x) = \frac{1}{1 + e^{-x}} \)
+- Advantages:
+  - Outputs between 0 and 1, useful for probability interpretation.
+  - Non-linear and differentiable, making it suitable for capturing complex patterns and for training via gradient descent.
+- Disadvantages:
+  - Suffers from the vanishing gradient problem, slowing down training in deep networks.
+  - Not zero-centered, which can bias the gradients.
+
+Tanh Activation Function:
+- Description: Similar to the sigmoid function but with a range of -1 to 1, making it zero-centered.
+- Formula: \( \text{Tanh}(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}} \)
+- Advantages:
+  - Non-linear, differentiable, and zero-centered, improving the gradient descent process.
+- Disadvantages:
+  - Still prone to the vanishing gradient problem, though less severe than the sigmoid function.
+
+ReLU Activation Function:
+- Description: A widely used activation function in deep learning, particularly in hidden layers.
+- Behavior: Outputs zero for negative inputs and the input value for positive inputs.
+- Advantages:
+  - Non-linear, unbounded output, and computationally efficient, making it ideal for deep networks.
+- Disadvantages:
+  - Suffers from the "dying ReLU" problem, where neurons can become inactive if they consistently receive negative inputs.
