@@ -1,0 +1,61 @@
+ Notes on RMSProp from the Video
+
+ 1. Introduction to Optimization Techniques in Machine Learning
+- Context: The video begins by introducing the topic of optimization techniques, emphasizing their importance in machine learning for 
+  tuning model parameters to minimize loss functions.
+- Importance: Optimization algorithms like RMSProp are crucial in adjusting learning processes to improve model performance efficiently.
+
+ 2. Review of Previous Concepts: Gradient Descent, Momentum, and AdaGrad
+- Gradient Descent:
+  - Basic Concept: A fundamental optimization algorithm that updates model parameters in the direction of the negative gradient to 
+    minimize the loss function.
+  
+- Momentum:
+  - Enhancement: Introduces a velocity term to smooth out the updates, helping the algorithm converge faster and reduce oscillations in 
+    steep regions.
+  
+- AdaGrad:
+  - Adaptation: Adjusts the learning rate for each parameter individually based on the historical gradients, which is particularly useful 
+    for handling sparse data.
+
+ 3. Detailed Explanation of RMSProp
+- Definition:
+  - RMSProp (Root Mean Square Propagation): An optimization algorithm designed to overcome some limitations of AdaGrad, particularly the 
+    issue of rapidly decreasing learning rates.
+  
+- Core Idea:
+  - Exponential Moving Average: Unlike AdaGrad, which accumulates the sum of squared gradients over time, RMSProp uses an exponential 
+    moving average to weigh the contribution of past gradients, allowing the learning rate to decay more slowly and remain effective over 
+    time.
+
+ 4. Derivation of the Mathematical Formula for RMSProp
+- Mathematical Foundation:
+  - Formula Derivation: The speaker derives the formula for RMSProp, explaining how it adjusts the learning rate for each parameter by 
+    considering both the current gradient and a running average of squared gradients.
+  
+  - Calculation:
+    - RMSProp maintains a moving average of the square of gradients and divides the current gradient by the square root of this average. 
+      This helps to stabilize the learning rate and prevents it from diminishing too quickly.
+
+ 5. Advantages and Disadvantages of RMSProp
+- Advantages:
+  - Stable Learning Rates: RMSProp mitigates the rapid decay of learning rates seen in AdaGrad, allowing for more consistent and effective 
+    learning throughout training.
+  
+  - Efficiency: It is particularly effective in handling non-stationary objectives and is widely used in deep learning due to its ability 
+    to adapt learning rates during training.
+
+- Disadvantages:
+  - Hyperparameter Sensitivity: RMSProp requires careful tuning of its hyperparameters, particularly the decay rate and learning rate, 
+    which can be challenging and time-consuming.
+  
+  - Possibility of Stagnation: If the decay rate is not appropriately set, the learning process can stagnate, leading to suboptimal 
+    convergence.
+
+ 6. Conclusion and Key Points
+- Summary of RMSProp:
+  - RMSProp is a powerful optimization algorithm that extends the ideas from AdaGrad by incorporating an exponential moving average of 
+    squared gradients to adjust learning rates more effectively.
+  
+  - Practicality: It is well-suited for deep learning applications where non-stationary objectives are common, offering a balanced 
+    approach to maintaining effective learning rates throughout the training process.
